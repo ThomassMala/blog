@@ -14,10 +14,14 @@
 		</div>
 	</div>
 	
-  <div class="actions">
-    <a href="add_article.php">Ajouter un article</a>
-  </div>
+    <div class="bouton">
+	  <!-- le type "button" rend le bouton cliquable -->
+	  <a href="add_article.php">
+	    <button type="button">Ajouter un article</button>
+	  </a>
+	</div>
 
+  
   <table id="tblarticles"">
     <thead>
 	  <tr>
@@ -31,9 +35,13 @@
   <?php
     while ($row = mysql_fetch_assoc($query)){
 	  echo '<tr>
-	          <td>' .$row['id_article'] .'</td>
+	          <th>' .$row['id_article'] .'</th>
 			  <td>' .$row['title'] .'</td>
 			  <td>' .$row['date'] .'</td>
+			  <td>
+					<a href="edit_article.php?id_article=' .$row['id_article'] .'">Modifier</a>
+					<a href="gestion_articles.php?action=delete_article&id_article=' .$row['id_article'] .'">Supprimer</a>
+			  </td>
 			</tr>
 	  ';
 	}

@@ -82,3 +82,41 @@ if (isset ($_POST['action']) && $_POST['action'] === 'addarticle')
         header ("Location: gestion_articles.php");
 	  }	  
   }
+
+  
+//action de modification d'article
+//--------------------------------
+if (isset ($_POST['action']) && $_POST['action'] === 'editarticle')
+  {
+    $title = $_POST['title'];
+    $text = $_POST['text'];
+	$messages = array();
+	$idArticle = $_GET['id_article'];
+	
+	if (empty($title))
+	  {
+	    $messages['title'] = 'Veuillez saisir un titre';
+	  }	
+	if (empty($text))
+	  {
+	    $messages['text'] = 'Veuillez saisir un article';
+	  }	
+
+	  
+//enregistrement des articles modifiés sur msql
+//---------------------------------------------
+	if (count($messages) === 0) 
+      {
+	    mysql_query ("UPDATE tblarticles SET title='" .mysql_real_escape_string($title) ."', text='" .mysql_real_escape_string($text) ."' WHERE id_article=" .mysql_real_escape_string($idArticle));
+        header ("Location: gestion_articles.php");
+	  }	  
+  }
+  
+  
+//action de suppression des articles
+//----------------------------------
+if (isset ($_GET['action']) && $_GET['action'] === 'delete_article')
+  {
+	mysql_query("DELETE FROM tblarticles WHERE id_article=" .mysql_real_escape_string($_GET['id_article']));
+	header("Location: gestion_articles.php");
+  }
