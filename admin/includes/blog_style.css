@@ -1,0 +1,248 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic);
+
+*{
+  padding: 0px;
+  margin: 0px; 
+}
+
+html, body  {
+  height: 100%;
+  background-color : #FFFFFF;
+  font-family: 'Droid Serif', serif;
+}
+
+header.head {
+  background-color: rgba(100,100,100,0.2);
+  height: 25px;
+}
+
+header.head  div.HBloc{
+
+}
+
+header.head  div.HBloc div.HContent{
+  padding: 0px 60px;
+}
+
+header.head .title {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 0px 0px 0px;
+}
+
+header.head nav {
+  background-color: rgba(100,100,100,0.4);
+  width: 100%;
+  min-width: 600px;
+  margin: 3px 0px 0px 0px;
+}
+
+header.head nav ul {
+  text-transform: uppercase;
+  list-style: none;
+  padding: 0px 60px;
+
+}
+
+header.head nav ul li.pull-right {
+  float: right;
+}
+
+header.head nav ul li.pull-normal {
+  margin-left:-1px;
+}
+
+header.head nav ul li {
+  display: block;
+  float: left;
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+  border-collapse: collapse;
+  border-right: solid 1px #ffffff;
+  border-left: solid 1px #ffffff;
+}
+
+header.head nav ul li .pull-left{
+  margin-left: -60px;
+  padding-left: 60px;
+}
+
+header.head nav ul li a{
+  padding: 0px 5px;
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  transition-property: background;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+header.head nav ul li a:hover{
+  text-decoration: none;
+  background-color: rgba(100,100,100,0.5);
+}
+
+#mainpage  {
+  padding: 0px 60px;
+}
+
+h2 {
+  font-size: 15px;
+}
+
+form{
+  width: 400px;
+  margin: auto;
+  background: lightgrey;  
+ }
+ 
+form fieldset {
+  border-top-width: 1px;
+  border-top-color: rgba(51,51,51,0.2);
+  padding: 10px;
+  margin: 0px;
+ }
+  
+form input {
+
+ }
+ 
+form fieldset.action {
+   text-align: right;
+   padding: 5px;
+ }
+ 
+form fieldset.field1 div.row{
+   padding: 10px;
+ }
+  
+form fieldset.field1 div.row textarea{
+   width: 100%;
+   height: 150px;
+ }
+ 
+form fieldset input {
+  width: 100%;
+}
+ 
+form fieldset.field1 div.row label {
+   display: inline-block;
+   width: 150px;
+ }
+ 
+form fieldset.field2{
+  text-align: right;
+  margin: -1px 0px;
+ }
+  
+form fieldset.field2 div.bouton{
+  padding: 0px 10px;
+ }
+
+form fieldset.field2 div.bouton button{
+  padding: 0px 5px;
+ }
+
+#tblarticles {
+  padding: 0px;
+  border-collapse: collapse;
+  width: 600px;
+}
+
+#tblarticles thead {
+  background-color: rgba(100,100,100,0.2);
+  
+}
+
+#tblarticles thead th{
+  width: 10%;
+  padding: 5px;
+}
+ 
+#tblarticles thead th.col1{
+  border-width:1px;
+  border-style:solid; 
+  border-color: #fff;
+  width: 10%;
+}
+ 
+#tblarticles thead th.col2{
+  border-width:1px;
+  border-style:solid; 
+  border-color: #fff;
+  width: 50%;
+}
+ 
+#tblarticles thead th.col3{
+  border-width:1px;
+  border-style:solid; 
+  border-color: #fff;
+  width: 30%;
+}
+ 
+#tblarticles thead th.col4{
+  border-width:1px;
+  border-style:solid; 
+  border-color: #fff;
+  width: 10%;
+}
+ 
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom: 180px;
+}  /* must be same height as the footer */
+
+#footer{
+  position: relative;
+  height: 180px;
+  clear:both;
+  margin: -180px -60px 0px -60px;
+  padding: 0px;
+}
+
+.FBloc {
+  color: #93A299;
+  border-top: solid 2px #413C3C;
+  background-color: #EFF0FF;
+  padding: 10px 60px 40px 60px;
+}
+
+.FContenu {
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px 12px 10px;
+  text-transform: uppercase;
+}
+
+.copyright {
+  color: #5a5a5a;
+  display: inline;
+  display: line-height;
+}
+
+.separateur {
+  color: #046380;
+  display: inline;
+  display: line-height;
+}
+
+.paragraff {
+  font-size: 20px;
+  font-weight: bold;
+  color: #046380;
+  vertical-align: sub;
+  display: inline;
+}
+
+.commande {
+  font-family: 'Droid Serif', serif;
+  font-size: 12px;
+  line-height: 8px; 
+  color: #046380;
+}
